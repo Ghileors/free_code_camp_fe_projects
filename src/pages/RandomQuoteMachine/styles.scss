@@ -1,0 +1,65 @@
+$base-font-weight: 500;
+$base-font-size: 1.6em;
+$base-color: var(--color);
+$base-transition: 2s ease-in-out;
+$base-text-stroke: 0.5px #000;
+
+p {
+  margin: 0;
+}
+
+#wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  color: $base-color;
+  align-items: center;
+  justify-content: center;
+  font-size: $base-font-size;
+  background-color: $base-color;
+  font-weight: $base-font-weight;
+  transition: background-color $base-transition;
+}
+
+#quote-box {
+  width: 50%;
+  min-height: 30%;
+  height: fit-content;
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+  border-radius: 5px;
+  background-color: #ffff;
+  transition: color $base-transition;
+}
+
+#text {
+  text-align: center;
+  -webkit-text-stroke: $base-text-stroke;
+}
+
+#author {
+  font-size: 0.8em;
+  text-align: right;
+  -webkit-text-stroke: $base-text-stroke;
+}
+
+#buttons {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+#twitter-icon {
+  color: $base-color;
+  transition: color $base-transition;
+  border: $base-text-stroke;
+}
+
+#new-quote {
+  font-size: 0.6em;
+  color: $base-color;
+  transition: color $base-transition;
+  -webkit-text-stroke: $base-text-stroke;
+}
