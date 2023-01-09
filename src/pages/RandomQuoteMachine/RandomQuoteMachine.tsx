@@ -4,6 +4,8 @@ import { useRandomQuoteMachine } from './useRandomQuoteMachine';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import './styles.scss';
+import { TopWave } from 'shared/components';
+import { BottomWave } from 'shared/components';
 
 export const RandomQuoteMachine = () => {
   const { color, currentQuote, handleClickFetchNewQuote } =
@@ -12,8 +14,13 @@ export const RandomQuoteMachine = () => {
   return (
     <div id='wrapper' style={{ '--color': color } as React.CSSProperties}>
       <div id='quote-box'>
-        <p id='text'>{currentQuote?.quote}</p>
-        <p id='author'>- {currentQuote?.author.replace('–', '')}</p>
+        <TopWave fill={color} />
+
+        <div id='text-wrapper'>
+          <p id='text'>{currentQuote?.quote}</p>
+          <p id='author'>- {currentQuote?.author.replace('–', '')}</p>
+        </div>
+
         <div id='buttons'>
           <a
             id='tweet-quote'
@@ -23,6 +30,7 @@ export const RandomQuoteMachine = () => {
           >
             <FontAwesomeIcon id='twitter-icon' icon={faTwitter} />
           </a>
+
           <button
             id='new-quote'
             className='default-btn'
@@ -31,6 +39,7 @@ export const RandomQuoteMachine = () => {
             New quote
           </button>
         </div>
+        <BottomWave fill={color} />
       </div>
     </div>
   );

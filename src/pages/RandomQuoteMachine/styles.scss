@@ -25,12 +25,16 @@ p {
   width: 50%;
   min-height: 30%;
   height: fit-content;
-  padding: 20px;
   display: grid;
   gap: 20px;
   border-radius: 5px;
   background-color: #ffff;
   transition: color $base-transition;
+}
+
+#text-wrapper {
+  margin: 0 auto;
+  width: 70%;
 }
 
 #text {
@@ -41,7 +45,7 @@ p {
 #author {
   font-size: 0.8em;
   text-align: right;
-  -webkit-text-stroke: $base-text-stroke;
+  margin-top: 20px;
 }
 
 #buttons {

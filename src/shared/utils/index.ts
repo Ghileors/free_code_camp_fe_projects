@@ -1,2 +1,3 @@
-export * from './getRandomQuote';
 export * from './createHex';
+export * from './waveEntity';
+export * from './getRandomQuote';

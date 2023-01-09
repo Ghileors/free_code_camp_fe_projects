@@ -1,5 +1,5 @@
-import { RandomQuoteMachine } from 'pages/RandomQuoteMachine/RandomQuoteMachine';
 import React from 'react';
+import { RandomQuoteMachine } from 'pages/RandomQuoteMachine/RandomQuoteMachine';
 
 import 'shared/styles/common.scss';
 
